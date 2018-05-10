@@ -1,0 +1,23 @@
+{
+  "name": "windy",
+  "version": "1.0.0",
+  "description": "An electron based weather app",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theubermanishere/windy.git"
+  },
+  "author": "theubermanishere",
+  "license": "GNU",
+  "bugs": {
+    "url": "https://github.com/theubermanishere/windy/issues"
+  },
+  "homepage": "https://github.com/theubermanishere/windy#readme",
+  "dependencies": {
+    "electron": "^2.0.0",
+    "request": "^2.85.0"
+  }
+}
