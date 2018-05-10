@@ -1,0 +1,19 @@
+h2 {
+	color: #2F343F;
+	font-family: 'PT sans', sans-serif;
+}
+
+#container {
+	height: 50px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#container>p {
+	font-size: 21px;
+font-family: 'PT sans', sans-serif;
+}
+
+html {
+font-family: 'PT sans', sans-serif;
+}

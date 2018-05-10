@@ -1,32 +1,31 @@
 <html>
 <head>
 	<title>Electron App</title>
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"> 
+ 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+	<link href="static/style.css" rel="stylesheet">
 </head>
 <body>
 	<div>
-	<div id="left" style="width:320px; float: left; background-color: black; display: inline">
-		<div id="loc" style="height:80px; background-color: yellow">
-			12:04 + Delhi
+	<div id="left" style="width:320px; float: left;display: inline; padding-left: 15px; padding-top: 30px; padding-bottom: 5px;">
+		<div id="loc" style="font-size: 30px;">
+			<p id="loc"></p>
 		</div>
-		<div id="temp" style="height:200px; margin-top:60px; margin-left: 75px; margin-right: 75px; margin-bottom: 60px; background-color: green">
+		<div id="temp" style="font-size: 80px; text-align: center; vertical-align: baseline; padding-left: 20px;">
 			<p id="tempE"></p>
 		</div>
 	</div>
-	<div id="right" style="width: 320px; float: right; display: inline">
-		<div id="container1" style="height:100px">
-			<h2>Temp Max</h2>
+	<div id="right" style="width: 320px; float: left; display: inline">
+		<div id="container">
 			<p id="max"></p>
 		</div>
-		<div id="container2" style="height:100px">
-			<h2>Temp Min</h2>
+		<div id="container">
 			<p id="min"></p>
 		</div>
-		<div id="container3" style="height:100px">
-			<h2>Pressure</h2>
+		<div id="container">
 			<p id="pressure"></p>
 		</div>
-		<div id="container4" style="height:100px">
-			<h2>Wind</h2>
+		<div id="container">
 			<p id="wind"></p>
 		</div>
 	</div>
