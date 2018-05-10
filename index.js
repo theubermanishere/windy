@@ -9,6 +9,6 @@ app.on('ready', function() {
 		frame: false
 	})
 	mainWindow.loadURL('file://' + __dirname + '/index.html')
-	mainWindow.webContents.openDevTools()
+//	mainWindow.webContents.openDevTools()
 
 });
