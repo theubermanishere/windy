@@ -14,26 +14,31 @@ html {
 }
 
 #left {
-	width:320px; 
+	width: 500px;
 	float: left;
 	display: inline;
    	padding-left: 15px; 
-	padding-top: 30px; 
 	padding-bottom: 5px;
 }
 
 #right {
-	width: 320px; 
-	float: left; 
-	display: inline
+	float: right;
+	display: inline;
+	margin-right: 40px;
 }
 
 #locc {
 	font-size: 30px;
 	vertical-align: text-top;
+	height: 80px;
+	margin: 10px;
 }
 
-#temp {
+p#loc {
+	margin-top: 10px;
+}
+
+#temp_sec {
 	font-size: 80px; 
 	text-align: center; 
 	vertical-align: baseline; 

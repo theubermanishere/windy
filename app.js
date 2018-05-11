@@ -11,7 +11,7 @@ var loc = null;
 var tempAdd = " ºC"
 
 // grab the tags
-var tempE = document.getElementById("tempE");
+var tempE = document.getElementById("temp");
 var pressE = document.getElementById("pressure");
 var windE = document.getElementById("wind");
 var minE = document.getElementById("min");
