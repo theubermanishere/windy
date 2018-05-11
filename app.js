@@ -1,4 +1,5 @@
 var req = require('request');
+var keys = require('./key');
 
 // initialize variables
 var temp = null;
@@ -10,6 +11,8 @@ var max = null;
 var loc = null;
 var tempAdd = " ºC"
 
+if (keys.units == "imperial") tempAdd = " ºF";
+
 // grab the tags
 var tempE = document.getElementById("temp");
 var pressE = document.getElementById("pressure");
@@ -18,7 +21,10 @@ var minE = document.getElementById("min");
 var maxE = document.getElementById("max");
 var locE = document.getElementById("loc");
 
-req("http://api.openweathermap.org/data/2.5/forecast?q=London&units=metric&APPID=9ab57704db7e4b0bb44c785878cd6e7b", (err, res, body) => {
+var url = "http://api.openweathermap.org/data/2.5/forecast?q=" + keys.city + "&units=" + keys.units + "&APPID=" + keys.APPID
+console.log(keys)
+
+req(url, (err, res, body) => {
 	var data = JSON.parse(body);
 	temp = data.list[0].main.temp;
 	min = data.list[0].main.temp_min;
@@ -33,8 +39,8 @@ req("http://api.openweathermap.org/data/2.5/forecast?q=London&units=metric&APPID
 	time = hours.toString() + ":" + mins.toString();
 
 
-	minE.innerHTML = "TEMP MAX <br> " + min + tempAdd
-	maxE.innerHTML = "TEMP MIN <br> " + max + tempAdd
+	minE.innerHTML = "TEMP MIN <br> " + min + tempAdd
+	maxE.innerHTML = "TEMP MAX <br> " + max + tempAdd
 	tempE.innerHTML = temp + tempAdd
 	pressE.innerHTML = "PRESSURE <br> " + pressure + " hPa"
 	windE.innerHTML = "WIND <br> " + wind + " km/h"
