@@ -1,37 +1,35 @@
 <html>
 <head>
-	<title>Electron App</title>
+	<title>Weather Applet</title>
 	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet"> 
  	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
 	<link href="static/style.css" rel="stylesheet">
 </head>
 <body>
 	<div>
-	<div id="left" style="width:320px; float: left;display: inline; padding-left: 15px; padding-top: 30px; padding-bottom: 5px;">
-		<div id="loc" style="font-size: 30px;">
-			<p id="loc"></p>
+		<div id="left">
+			<div id="locc">
+				<p id="loc"></p>
+			</div>
+			<div id="temp">
+				<p id="tempE"></p>
+			</div>
 		</div>
-		<div id="temp" style="font-size: 80px; text-align: center; vertical-align: baseline; padding-left: 20px;">
-			<p id="tempE"></p>
+		<div id="right">
+			<div class="container">
+				<p id="max"></p>
+			</div>
+			<div class="container">
+				<p id="min"></p>
+			</div>
+			<div class="container">
+				<p id="pressure"></p>
+			</div>
+			<div class="container">
+				<p id="wind"></p>
+			</div>
 		</div>
 	</div>
-	<div id="right" style="width: 320px; float: left; display: inline">
-		<div id="container">
-			<p id="max"></p>
-		</div>
-		<div id="container">
-			<p id="min"></p>
-		</div>
-		<div id="container">
-			<p id="pressure"></p>
-		</div>
-		<div id="container">
-			<p id="wind"></p>
-		</div>
-	</div>
-	</div>
-
-
 	<script>
 		require('./app.js')
 	</script>
